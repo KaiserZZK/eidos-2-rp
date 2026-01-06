@@ -19,22 +19,76 @@ label background:
     scene bg auditorium
     with fade
     show roland neutral at left
-    "Roland" "EIDOS———\n这个一度只存在于理论构想中超级运算系统，"
-    "Roland" "正在被我们的科研团队快速实现。"
+    "Roland" "EIDOS———"
+    "Roland" "这个一度只存在于理论构想中超级运算系统，\n正在被我们的科研团队快速实现。"
     "Roland" "在小规模的、当地的经济生产和计划管理中，\nEIDOS的部分程式已经可以做到精准、高效地分配资源。"
     "Roland" "随着帝国分配给研究所的算力比例指数级增长，\n我们在EIDOS项目的开发和应用上也取得了可观的成果。"
     "Roland" "那么，让我们把目光转向Morphy博士——\n他在三年前EIDOS项目伊始便担任首席科研人员。"
     "Roland" "Morphy博士，您来回答一下记者的问题吧。"
+    hide roland 
 
-    hide roland with fade
-    "演讲厅的灯光照得Morphy面上发热，口渴难耐。"
-    "他抿了一口水，放下杯子，面色平静，略显疲惫。"
+    
+    
+    scene bg 1采访
+    with fade
+    "{i}演讲厅的灯光照得Morphy面上发热，口渴难耐。\n他抿了一口水，放下杯子，面色平静，略显疲惫。{/i}"
 
     show john neutral at right
-    "好奇的记者" "博士您好，我们来谈谈EIDOS和人工智能吧。\nEIDOS是否是在任何方面都不亚于人类理智的人工智能？"
-    "好奇的记者" "您能否做出断然的回答：\n是或不是？"
+    "记者" "博士您好，我们来谈谈EIDOS和人工智能吧。\nEIDOS是否是在任何方面都不亚于人类认知的人工智能？"
+    "记者" "您能否做出断然的回答：\n{i}是{/i}或{i}不是？{/i}"
+    hide john neutral
 
-    show morphy neutral at left
+    
+    "Morphy" "要完整回答这个问题需要解释诸多相关领域：\n认知的基本定义，组成EIDOS的不同系统，甚至是人类技术的界限……"
+    "Morphy" "既然您这么急于听到明确的答复：\n是，毫无疑问是能够制造出来的——"
+    "Morphy" "这种人工智能不仅不亚于人类的智识，\n而且无论从哪方面来说都要超过人类的智识。"
+    "Morphy" "我们团队将最终的产物命名为EIDOS，\n而它完全进入社会的那一天必将到来，"
+    "Morphy" "总的来说，它不会迟于2000年\n但愿你我都能目睹这一事实。"
+
+    "演出placae-holder" "记者席出现轻微骚动"
+
+    show john neutral at right
+    "记者" "期限这么准确？\n您好像是按生产计划来讲的。"
+    hide john neutral at right
+    
+    "Morphy" "差不多。\n我们控制论研究所有关这个课题的科学研究工作规划就定在2000年。"
+
+    show john neutral at right
+    "记者" "那制造出EIDOS意味着什么？"
+    hide john neutral at right
+    
+    "Morphy" "首先，显而易见的事实：人类…"
+    scene bg 1采访b
+    show 1领导示意a
+    "{i}Morphy注意到Roland朝他打了个手势{/i}"
+    hide 1领导示意a
+    show 1领导示意b
+    ""
+    hide 1领导示意b
+    show 1领导示意c
+    ""
+    hide 1领导示意c
+
+    scene bg 1采访
+    "Morphy" "…帝国将成为世界上第一个控制论国家。"
+    "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
+    "Morphy" "其次，我们也将在技术领域达到前所未有的高度。"
+    "Morphy" "EIDOS的实现意味着人类\n将对这个迅速复杂化的世界获得更高的控制权："
+    "Morphy"
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
 
 #
 # 随着帝国分配给研究所的算力比例指数级增长，
