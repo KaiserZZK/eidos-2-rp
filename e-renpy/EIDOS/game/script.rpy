@@ -4,6 +4,9 @@
 # name of the character.
 # $ Zeil = Character('Zeil', color="#E03B8B")
 default Morphy = Character('Morphy', color="#E03B8B")
+
+define Morphy = Character("Morphy")
+define 记者 = Character("记者")
 # The game starts here.
 label start:
     "Morphy" "在这个项目的伊始\n我怀揣着对人类迄今已掌握的科技还有知识的雄心壮志，"
@@ -74,7 +77,75 @@ label background:
     "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
     "Morphy" "其次，我们也将在技术领域达到前所未有的高度。"
     "Morphy" "EIDOS的实现意味着人类\n将对这个迅速复杂化的世界获得更高的控制权："
-    "Morphy"
+    Morphy "EIDOS并不仅仅是单个意义上的“人工智能”，\n它也是复杂的控制系统的组合智能。"
+
+    Morphy "加在一起，EIDOS将可以承担\n管理生产、发展科学知识，从事宇宙实验等等的使命。"
+
+    show john neutral at right
+    "记者" "抱歉，Morphy博士，我没听明白：这怎么会是更高的控制权呢？\n听上去EIDOS将控制我们的一切活动。"
+    hide john neutral at right
+
+    Morphy "这完全是一种误解。\n在自动化系统和人工智能发展的任何层面上都少不了人，"
+
+    Morphy "只因为人才能给系统下达任务，只有人才能处于一切信息过程的开端和终端，\n只有人才能确定标准和对结果做出评价。"
+
+    Morphy "通过将演绎思维，包括定理证明过程，自动化，\n啊，说得通俗一些——"
+
+    Morphy "当电子计算机和所谓”人工智能“可以代理无法穷尽的数学运算，\n我们作为人类的 特殊性 将被全面解放。"
+
+    Morphy "EIDOS的现身——是人类的胜利。\n这是未来真正的方向，毋庸置疑。"
+
+    Morphy "（在这个混乱的、没有秩序，也没有人在乎你、我或是他的世界中，\n我却牢牢抓住了唯一一件重要的事情。）"
+
+    Morphy "（这是我的胜利，\n这也将代表人类的胜利。）"
+
+    show john neutral at right
+    "记者" "您愿意跟我讲讲，EIDOS最终会以什么形式\n展现在我们这种普通人面前吗？"
+    hide john neutral at right
+
+    show john neutral at right
+    "记者" "它有人的面貌、能说人的语言吗？"
+    hide john neutral at right
+
+    Morphy "只要我们愿意，就能够赋予EIDOS以人的外貌。\n但这不是主要任务，没有比这个更简单的了。"
+
+    Morphy "EIDOS是人工智能，\n人工智能模拟天然认知。"
+
+    Morphy "当您与任何人类，任何 拥有天然认知的对象 交流时，\n您并不知道对方将回答您什么，"
+
+    Morphy "所以，回答您第二个问题，\n“EIDOS能说人的语言吗？”"
+
+    Morphy "当它自觉地做出应答您时，只要您不掀开它的拟人躯壳，\n暴露出下面许许多多的零件和导线，"
+
+    Morphy "您就连一点人工的痕迹也发现不了。"
+
+    show john neutral at right
+    "记者" "您把所有这一切讲得这么平淡无奇，\n我还是初次听到，简直不可思议！"
+    hide john neutral at right
+
+    show john neutral at right
+    "记者" "这就是说，EIDOS将不仅具有知识，\n还能听、能说、能计算、能思考等等。"
+    hide john neutral at right
+
+    show john neutral at right
+    "记者" "是否能理解为，它将了解人的一切？\n心灵、情绪和感情。"
+    hide john neutral at right
+
+    show john neutral at right
+    "记者" "它即能开玩笑和感到难过，又能发出责难和表示同情？\n而所有这一切都是由既不知道欢乐也不知道痛苦的、无生命的一堆钢铁做出来的？"
+    hide john neutral at right
+
+    scene bg 1采访微笑
+    Morphy "【轻微诧异，露出宽慰对方似的笑容】\n噢，原来这个令您感到......您相信一种“无法被传达的灵性”？"
+    
+    scene bg 1采访
+    Morphy "需要强调的是，研究所对EIDOS的主要目标\n并不包含打造一个“​​富有人类感情“的拟人机器。"
+
+    Morphy "同时，所谓人类的灵性是不存在的。\n凡是人能够表达的，毫无例外都是可以模拟的。"
+    Morphy "现在我要做一个补充：有一个例外："
+    Morphy "要想使机器系统具有猜测人的观点和兴趣、\n以及希望事物将要如何发展的动机，这种可能是不存在的。"
+
+
     
 
 
