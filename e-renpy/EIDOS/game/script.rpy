@@ -5,6 +5,13 @@
 # $ Zeil = Character('Zeil', color="#E03B8B")
 default Morphy = Character('Morphy', color="#E03B8B")
 
+image bg_1 = "bg 1远景.jpg"
+
+transform bg_contain:
+    fit "contain"
+    xysize (config.screen_width, config.screen_height)
+
+
 define Morphy = Character("Morphy")
 define 记者 = Character("记者")
 # The game starts here.
@@ -21,7 +28,7 @@ label start:
     stop music fadeout 1.0
 
 label background:
-    scene bg 1远景
+    scene bg_1 at bg_contain
     with fade
     "科学院控制论研究所。时间：1998"
     scene bg 1近景
