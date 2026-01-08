@@ -19,6 +19,12 @@ label start:
     "Morphy" "仍然算得上一种间接的抗争胜利。"
 
 label background:
+    scene bg 1远景
+    with fade
+    "科学院控制论研究所。时间：1998"
+    scene bg 1近景
+    "科学院控制论研究所。时间：1998"
+
     scene bg auditorium
     with fade
     show roland neutral at left
@@ -95,10 +101,11 @@ label background:
 
     Morphy "EIDOS的现身——是人类的胜利。\n这是未来真正的方向，毋庸置疑。"
 
+    scene bg 1采访黑背景
     Morphy "（在这个混乱的、没有秩序，也没有人在乎你、我或是他的世界中，\n我却牢牢抓住了唯一一件重要的事情。）"
-
     Morphy "（这是我的胜利，\n这也将代表人类的胜利。）"
 
+    scene bg 1采访
     show john neutral at right
     "记者" "您愿意跟我讲讲，EIDOS最终会以什么形式\n展现在我们这种普通人面前吗？"
     hide john neutral at right
@@ -142,7 +149,7 @@ label background:
     Morphy "需要强调的是，研究所对EIDOS的主要目标\n并不包含打造一个“​​富有人类感情“的拟人机器。"
 
     Morphy "同时，所谓人类的灵性是不存在的。\n凡是人能够表达的，毫无例外都是可以模拟的。"
-    Morphy "现在我要做一个补充：有一个例外："
+    Morphy "现在我要做一个补充，有一个例外："
     Morphy "要想使机器系统具有猜测人的观点和兴趣、\n以及希望事物将要如何发展的动机，这种可能是不存在的。"
 
 
