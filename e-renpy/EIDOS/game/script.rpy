@@ -9,6 +9,7 @@ define Morphy = Character("Morphy")
 define 记者 = Character("记者")
 # The game starts here.
 label start:
+    play music "audio/00-seaside-short.mp3" fadein 1.0 volume 0.5
     "Morphy" "在这个项目的伊始\n我怀揣着对人类迄今已掌握的科技还有知识的雄心壮志，"
     "Morphy" "决心我要完成一项足以划分人类文明阶段的成就。"
     "Morphy" "人类本质上是基因传播的副产物，\n而我会通过科技创造一个崭新的、游走于自然选择之外的物种。"
@@ -17,6 +18,7 @@ label start:
     "Morphy" "人类无法跳出基因施加在这个群体上的牢笼了。"
     "Morphy" "那退而求其次\n转头创造一种匹敌人类的存在并获得它的控制权——"
     "Morphy" "仍然算得上一种间接的抗争胜利。"
+    stop music fadeout 1.0
 
 label background:
     scene bg 1远景
@@ -24,7 +26,7 @@ label background:
     "科学院控制论研究所。时间：1998"
     scene bg 1近景
     "科学院控制论研究所。时间：1998"
-
+    play music "audio/01-.mp3" fadein 1.0 volume 0.5
     scene bg auditorium
     with fade
     show roland neutral at left
@@ -34,7 +36,8 @@ label background:
     "Roland" "随着帝国分配给研究所的算力比例指数级增长，\n我们在EIDOS项目的开发和应用上也取得了可观的成果。"
     "Roland" "那么，让我们把目光转向Morphy博士——\n他在三年前EIDOS项目伊始便担任首席科研人员。"
     "Roland" "Morphy博士，您来回答一下记者的问题吧。"
-    hide roland 
+    hide roland
+    stop music fadeout 1.0
 
     
     
@@ -54,8 +57,11 @@ label background:
     "Morphy" "我们团队将最终的产物命名为EIDOS，\n而它完全进入社会的那一天必将到来，"
     "Morphy" "总的来说，它不会迟于2000年\n但愿你我都能目睹这一事实。"
 
+    play music "audio/02-.mp3" fadein 1.0 volume 0.5
     "演出placae-holder" "记者席出现轻微骚动"
+    stop music fadeout 1.0
 
+    play music "audio/01-.mp3" fadein 1.0 volume 0.5
     show john neutral at right
     "记者" "期限这么准确？\n您好像是按生产计划来讲的。"
     hide john neutral at right
@@ -67,6 +73,7 @@ label background:
     hide john neutral at right
     
     "Morphy" "首先，显而易见的事实：人类…"
+#     completel silence
     scene bg 1采访b
     show 1领导示意a
     "{i}Morphy注意到Roland朝他打了个手势{/i}"
@@ -78,6 +85,7 @@ label background:
     ""
     hide 1领导示意c
 
+    play music "audio/01-.mp3" fadein 1.0 volume 0.5
     scene bg 1采访
     "Morphy" "…帝国将成为世界上第一个控制论国家。"
     "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
