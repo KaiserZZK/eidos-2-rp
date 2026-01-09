@@ -5,13 +5,6 @@
 # $ Zeil = Character('Zeil', color="#E03B8B")
 default Morphy = Character('Morphy', color="#E03B8B")
 
-image bg_1 = "bg 1远景.jpg"
-
-transform bg_contain:
-    fit "contain"
-    xysize (config.screen_width, config.screen_height)
-
-
 define Morphy = Character("Morphy")
 define 记者 = Character("记者")
 # The game starts here.
@@ -28,13 +21,13 @@ label start:
     stop music fadeout 1.0
 
 label background:
-    scene bg_1 at bg_contain
+    scene bg 1远景
     with fade
     "科学院控制论研究所。时间：1998"
     scene bg 1近景
     "科学院控制论研究所。时间：1998"
     play music "audio/01-.mp3" fadein 1.0 volume 0.5
-    scene bg auditorium
+    scene bg 对话交互main
     with fade
     show roland neutral at left
     "Roland" "EIDOS———"
@@ -47,17 +40,18 @@ label background:
     stop music fadeout 1.0
 
     
-    
-    scene bg 1采访
+    scene bg 对话交互main left only
+    #scene bg 1采访
     with fade
     "{i}演讲厅的灯光照得Morphy面上发热，口渴难耐。\n他抿了一口水，放下杯子，面色平静，略显疲惫。{/i}"
 
-    show john neutral at right
+    #show john neutral at right
+    scene bg 对话交互main right
     "记者" "博士您好，我们来谈谈EIDOS和人工智能吧。\nEIDOS是否是在任何方面都不亚于人类认知的人工智能？"
     "记者" "您能否做出断然的回答：\n{i}是{/i}或{i}不是？{/i}"
-    hide john neutral
+    #hide john neutral
 
-    
+    scene bg 对话交互 main lleft
     "Morphy" "要完整回答这个问题需要解释诸多相关领域：\n认知的基本定义，组成EIDOS的不同系统，甚至是人类技术的界限……"
     "Morphy" "既然您这么急于听到明确的答复：\n是，毫无疑问是能够制造出来的——"
     "Morphy" "这种人工智能不仅不亚于人类的智识，\n而且无论从哪方面来说都要超过人类的智识。"
