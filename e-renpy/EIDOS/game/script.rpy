@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -157,7 +157,7 @@ label background:
     scene bg 1采访
     Morphy "需要强调的是，研究所对EIDOS的主要目标\n并不包含打造一个“​​富有人类感情“的拟人机器。"
 
-    Morphy "同时，所谓人类的灵性是不存在的。\n凡是人能够表达的，毫无例外都是可以模拟的。"
+    Morphy "至于“人类的灵性”————不存在那种东西。\n凡是人能够表达的，毫无例外都是可以模拟的。"
     Morphy "现在我要做一个补充，有一个例外："
     Morphy "要想使机器系统具有猜测人的观点和兴趣、\n以及希望事物将要如何发展的动机，这种可能是不存在的。"
 
