@@ -5,6 +5,14 @@
 # $ Zeil = Character('Zeil', color="#E03B8B")
 default Morphy = Character('Morphy', color="#E03B8B")
 
+image bg_1 = "bg 1远景.jpg"
+image chaos = "chaos.png"
+image collection = "collection.png"
+image 人控制eidos = "人控制eidos.png"
+transform bg_contain:
+    fit "contain"
+    xysize (config.screen_width, config.screen_height)
+
 define Morphy = Character("Morphy")
 define 记者 = Character("记者")
 # The game starts here.
@@ -21,7 +29,7 @@ label start:
     stop music fadeout 1.0
 
 label background:
-    scene bg 1远景
+    scene bg_1 at bg_contain
     with fade
     "科学院控制论研究所。时间：1998"
     scene bg 1近景
@@ -74,7 +82,7 @@ label background:
     hide john neutral at right
     
     "Morphy" "首先，显而易见的事实：人类…"
-#     completel silence
+#     complete silence
     scene bg 1采访b
     show 1领导示意a
     "{i}Morphy注意到Roland朝他打了个手势{/i}"
@@ -87,9 +95,14 @@ label background:
     hide 1领导示意c
 
     play music "audio/01-.mp3" fadein 1.0 volume 0.5
-    scene bg 1采访
+    scene bg 对话交互 main lleft
     "Morphy" "…帝国将成为世界上第一个控制论国家。"
+    show chaos at bg_contain
     "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
+    show collection at bg_contain
+    hide chaos
+    "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
+    #hide collection
     "Morphy" "其次，我们也将在技术领域达到前所未有的高度。"
     "Morphy" "EIDOS的实现意味着人类\n将对这个迅速复杂化的世界获得更高的控制权："
     Morphy "EIDOS并不仅仅是单个意义上的“人工智能”，\n它也是复杂的控制系统的组合智能。"
@@ -102,8 +115,10 @@ label background:
 
     Morphy "这完全是一种误解。\n在自动化系统和人工智能发展的任何层面上都少不了人，"
 
+    show 人控制eidos at bg_contain
+    hide collection
     Morphy "只因为人才能给系统下达任务，只有人才能处于一切信息过程的开端和终端，\n只有人才能确定标准和对结果做出评价。"
-
+    hide 人控制eidos
     Morphy "通过将演绎思维，包括定理证明过程，自动化，\n啊，说得通俗一些——"
 
     Morphy "当电子计算机和所谓”人工智能“可以代理无法穷尽的数学运算，\n我们作为人类的 特殊性 将被全面解放。"
@@ -131,7 +146,7 @@ label background:
 
     Morphy "所以，回答您第二个问题，\n“EIDOS能说人的语言吗？”"
 
-    Morphy "当它自觉地做出应答您时，只要您不掀开它的拟人躯壳，\n暴露出下面许许多多的零件和导线，"
+    Morphy "当它通过“模拟-预测-决策-矫正”自觉地应答您时，\n只要您不掀开它的拟人躯壳，暴露出下面许许多多的零件和导线，"
 
     Morphy "您就连一点人工的痕迹也发现不了。"
 
