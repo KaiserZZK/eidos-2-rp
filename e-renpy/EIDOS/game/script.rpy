@@ -9,6 +9,10 @@ image bg_1 = "bg 1远景.jpg"
 image chaos = "chaos.png"
 image collection = "collection.png"
 image 人控制eidos = "人控制eidos.png"
+image 捡蜂 = "捡蜂.png"
+image work bee = "work bee.png"
+image humans get bee = "humans get bee.png"
+image bee fly out = "bee fly out.png"
 transform bg_contain:
     fit "contain"
     xysize (config.screen_width, config.screen_height)
@@ -121,8 +125,18 @@ label background:
     hide 人控制eidos
     Morphy "通过将演绎思维，包括定理证明过程，自动化，\n啊，说得通俗一些——"
 
-    Morphy "当电子计算机和所谓”人工智能“可以代理无法穷尽的数学运算，\n我们作为人类的 特殊性 将被全面解放。"
-
+    show work bee at bg_contain
+    Morphy "当电子计算机和所谓”人工智能“可以代理无法穷尽的数学运算，"
+    show bee fly out at bg_contain
+    hide work bee
+    Morphy "我们作为人类的 {i}特殊性{/i} 将被全面解放。"
+    show 捡蜂 at bg_contain
+    hide bee fly out
+    Morphy "我们作为人类的 {i}特殊性{/i} 将被全面解放。"
+    show humans get bee at bg_contain
+    hide 捡蜂
+    Morphy "我们作为人类的 {i}特殊性{/i} 将被全面解放。"
+    hide humans get bee
     Morphy "EIDOS的现身——是人类的胜利。\n这是未来真正的方向，毋庸置疑。"
 
     scene bg 1采访黑背景
@@ -146,7 +160,7 @@ label background:
 
     Morphy "所以，回答您第二个问题，\n“EIDOS能说人的语言吗？”"
 
-    Morphy "当它通过“模拟-预测-决策-矫正”自觉地应答您时，\n只要您不掀开它的拟人躯壳，暴露出下面许许多多的零件和导线，"
+    Morphy "当它循环“模拟-预测-决策-矫正”这一反馈琏，自觉地应答您时，\n只要您不掀开它的拟人躯壳，暴露出下面许许多多的零件和导线，"
 
     Morphy "您就连一点人工的痕迹也发现不了。"
 
