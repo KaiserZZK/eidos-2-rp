@@ -80,7 +80,7 @@ label background:
     show right 记者 at bg_contain
     "记者" "期限这么准确？\n您好像是按生产计划来讲的。"
     hide right 记者
-    "Morphy" "差不多。\n我们控制论研究所有关这个课题的科学研究工作规划就定在2000年。"
+    "Morphy" "差不多。\n研究所针对这个课题的工作规划就定在2000年。"
     show right 记者 at bg_contain
     "记者" "那制造出EIDOS意味着什么？"
     hide right 记者
@@ -102,10 +102,11 @@ label background:
     scene bg 对话交互 main lleft
     "Morphy" "…帝国将成为世界上第一个控制论国家。"
     show chaos at bg_contain
-    "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
+    "Morphy" "EIDOS将作为全国决策制定系统的一部分，\n辅助—甚至在狭义上决定—国家的各个方面："
+    "Morphy" "政治管理、经济生产、军事演练、社会生活。"
     show collection at bg_contain
     hide chaos
-    "Morphy" "EIDOS将作为全国决策制定系统的一部分，辅助—甚至在狭义上决定—国家的各个方面：\n政治管理、经济生产、军事演练、社会生活。"
+    "Morphy" "政治管理、经济生产、军事演练、社会生活。"
     #hide collection
     "Morphy" "其次，我们也将在技术领域达到前所未有的高度。"
     "Morphy" "EIDOS的实现意味着人类\n将对这个迅速复杂化的世界获得更高的控制权："
@@ -121,7 +122,7 @@ label background:
 
     show 人控制eidos at bg_contain
     hide collection
-    Morphy "只因为人才能给系统下达任务，只有人才能处于一切信息过程的开端和终端，\n只有人才能确定标准和对结果做出评价。"
+    Morphy "只有人才能给系统下达任务，只有人才能处于一切信息过程的开端和终端，\n只有人才能确定标准和对结果做出评价。"
     hide 人控制eidos
     Morphy "通过将演绎思维，包括定理证明过程，自动化，\n啊，说得通俗一些——"
 
@@ -177,11 +178,11 @@ label background:
     hide john neutral at right
 
     show john neutral at right
-    "记者" "它即能开玩笑和感到难过，又能发出责难和表示同情？\n而所有这一切都是由既不知道欢乐也不知道痛苦的、无生命的一堆钢铁做出来的？"
+    "记者" "它既能开玩笑和感到难过，又能发出责难和表示同情？\n而所有这一切都是由既不知道欢乐也不知道痛苦的、无生命的一堆钢铁做出来的？"
     hide john neutral at right
 
     scene bg 1采访微笑
-    Morphy "【轻微诧异，露出宽慰对方似的笑容】\n噢，原来这个令您感到......您相信一种“无法被传达的灵性”？"
+    Morphy "噢，原来这个令您感到......\n您相信一种“无法被传达的灵性”？"
     
     scene bg 1采访
     Morphy "需要强调的是，研究所对EIDOS的主要目标\n并不包含打造一个“​​富有人类感情“的拟人机器。"
