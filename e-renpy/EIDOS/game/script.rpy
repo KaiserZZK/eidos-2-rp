@@ -6,6 +6,8 @@
 default Morphy = Character('Morphy', color="#E03B8B")
 
 image bg_1 = "bg 1远景.jpg"
+image bg 1近景 = "bg 1近景.jpg"
+image right 记者 = "right 记者.png"
 image chaos = "chaos.png"
 image collection = "collection.png"
 image 人控制eidos = "人控制eidos.png"
@@ -36,7 +38,7 @@ label background:
     scene bg_1 at bg_contain
     with fade
     "科学院控制论研究所。时间：1998"
-    scene bg 1近景
+    scene bg 1近景 at bg_contain
     "科学院控制论研究所。时间：1998"
     play music "audio/01-.mp3" fadein 1.0 volume 0.5
     scene bg 对话交互main
@@ -75,15 +77,13 @@ label background:
     stop music fadeout 1.0
 
     play music "audio/01-.mp3" fadein 1.0 volume 0.5
-    show john neutral at right
+    show right 记者 at bg_contain
     "记者" "期限这么准确？\n您好像是按生产计划来讲的。"
-    hide john neutral at right
-    
+    hide right 记者
     "Morphy" "差不多。\n我们控制论研究所有关这个课题的科学研究工作规划就定在2000年。"
-
-    show john neutral at right
+    show right 记者 at bg_contain
     "记者" "那制造出EIDOS意味着什么？"
-    hide john neutral at right
+    hide right 记者
     
     "Morphy" "首先，显而易见的事实：人类…"
 #     complete silence
@@ -113,9 +113,9 @@ label background:
 
     Morphy "加在一起，EIDOS将可以承担\n管理生产、发展科学知识，从事宇宙实验等等的使命。"
 
-    show john neutral at right
+    show right 记者 at bg_contain
     "记者" "抱歉，Morphy博士，我没听明白：这怎么会是更高的控制权呢？\n听上去EIDOS将控制我们的一切活动。"
-    hide john neutral at right
+    hide right 记者
 
     Morphy "这完全是一种误解。\n在自动化系统和人工智能发展的任何层面上都少不了人，"
 
