@@ -36,6 +36,8 @@ define gui.about = _p("""
 
 define build.name = "EIDOS"
 
+## 语言
+define config.default_language = None
 
 ## 音效和音乐 #######################################################################
 

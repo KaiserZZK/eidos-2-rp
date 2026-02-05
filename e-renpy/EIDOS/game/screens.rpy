@@ -364,6 +364,8 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+            textbutton "中文" action Language(None)
+            textbutton "English" action Language("english")
 
 
 style main_menu_frame is empty
